@@ -6,7 +6,7 @@ globalProperties:
   modelTests: false
 
 # The main namespace to use for all classes.
-invokerPackage: Ally\Project
+invokerPackage: Ally\PetStore
 # model/dto package
 modelPackage: Schema
 # path to folder, probably will just be same as gitRepoId for consistency
