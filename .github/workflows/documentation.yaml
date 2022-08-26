@@ -74,5 +74,5 @@ jobs:
         branch: gh-pages
         folder: release
         clean-exclude: |
-          README.md
-          index.html
+          ./README.md
+          ./index.html
