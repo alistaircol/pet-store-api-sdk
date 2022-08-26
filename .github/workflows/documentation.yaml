@@ -10,6 +10,7 @@ jobs:
     strategy:
       matrix:
         affix:
+        - apigen
         - doctum
         - doxygen
         - openapi
@@ -45,6 +46,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Checkout apigen
+      uses: actions/checkout@v3
+      with:
+        ref: gh-pages-apigen
+        path: release/apigen
     - name: Checkout doctum
       uses: actions/checkout@v3
       with:
