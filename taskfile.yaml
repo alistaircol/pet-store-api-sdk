@@ -34,6 +34,7 @@ tasks:
     - chmod +x .generator/bin/doctum.phar
     - php .generator/bin/doctum.phar parse --force --ignore-parse-errors doctum.php
     - php .generator/bin/doctum.phar render --force --ignore-parse-errors doctum.php
+    - echo "::set-output name=directory::.generator/docs/doctum"
     interactive: true
 
   doxygen:
@@ -46,6 +47,7 @@ tasks:
         --workdir=/local \
         greenbone/doxygen \
         doxygen Doxyfile
+    - echo "::set-output name=directory::.generator/docs/doxygen/html"
     interactive: true
 
   openapi:
@@ -63,6 +65,7 @@ tasks:
         --input-spec=spec/api.yaml \
         --generator-name=html2 \
         --output=.generator/docs/openapi
+    - echo "::set-output name=directory::.generator/docs/openapi"
     interactive: true
 
   phpdoc:
@@ -75,4 +78,5 @@ tasks:
         --workdir=/local \
         phpdoc/phpdoc:3 \
         --config=phpdoc.xml run
+    - echo "::set-output name=directory::.generator/docs/phpdoc"
     interactive: true
