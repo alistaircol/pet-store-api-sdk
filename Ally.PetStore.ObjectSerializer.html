@@ -1,0 +1,783 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class Ally\PetStore\ObjectSerializer | Ally's PetStore API API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ally.html">Ally</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ally.PetStore.html">PetStore</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Ally.PetStore.Api.html">Api</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Ally.PetStore.Schema.html">Schema</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ally.PetStore.Configuration.html">
+							Configuration
+						</a>
+					</li>
+					<li>
+						<a href="Ally.PetStore.HeaderSelector.html">
+							HeaderSelector
+						</a>
+					</li>
+					<li class="active">
+						<a href="Ally.PetStore.ObjectSerializer.html">
+							ObjectSerializer
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="Ally.PetStore.ApiException.html">
+							ApiException
+						</a>
+					</li>
+			</ul>
+		</div>
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ally.PetStore.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ally.PetStore.ObjectSerializer.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ally.html">Ally</a>\<a href="namespace-Ally.PetStore.html">PetStore</a>\<a href="Ally.PetStore.ObjectSerializer.html">ObjectSerializer</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>ObjectSerializer Class Doc Comment</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-ObjectSerializer.html#42" title="Go to source code">ObjectSerializer.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="setDateTimeFormat" id="_setDateTimeFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#47-55" title="Go to source code">setDateTimeFormat</a>(<span>string <var>$format</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Change the date format
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Change the date format</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$format</var>&nbsp;&nbsp;</td>
+										<td><p>the new date format to use</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setDateTimeFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sanitizeForSerialization" id="_sanitizeForSerialization">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#57-114" title="Go to source code">sanitizeForSerialization</a>(<span>mixed <var>$data</var></span>, <span>string <var>$type</var> = <span class="php-kw">null</span></span>, <span>string <var>$format</var> = <span class="php-kw">null</span></span>): scalar|object|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Serialize data
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Serialize data</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>the data to serialize</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>the OpenAPIToolsType of the data</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$format</var>&nbsp;&nbsp;</td>
+										<td><p>the format of the OpenAPITools type of the data</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>serialized form of $data</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sanitizeForSerialization">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sanitizeFilename" id="_sanitizeFilename">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#116-131" title="Go to source code">sanitizeFilename</a>(<span>string <var>$filename</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Sanitize filename by removing path.
+e.g. ../../sun.gif becomes sun.gif
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sanitize filename by removing path.
+e.g. ../../sun.gif becomes sun.gif</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$filename</var>&nbsp;&nbsp;</td>
+										<td><p>filename to be sanitized</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the sanitized filename</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sanitizeFilename">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="sanitizeTimestamp" id="_sanitizeTimestamp">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#133-145" title="Go to source code">sanitizeTimestamp</a>(<span>string <var>$timestamp</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Shorter timestamp microseconds to 6 digits length.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Shorter timestamp microseconds to 6 digits length.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$timestamp</var>&nbsp;&nbsp;</td>
+										<td><p>Original timestamp</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the shorten timestamp</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_sanitizeTimestamp">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toPathValue" id="_toPathValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#147-158" title="Go to source code">toPathValue</a>(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Take value and turn it into a string suitable for inclusion in
+the path, by url-encoding.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take value and turn it into a string suitable for inclusion in
+the path, by url-encoding.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>a string which will be part of the path</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the serialized object</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toPathValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toQueryValue" id="_toQueryValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#160-230" title="Go to source code">toQueryValue</a>(
+	<span>mixed <var>$value</var></span>,
+	<span>string <var>$paramName</var></span>,
+	<span>string <var>$openApiType</var> = <span class="php-str">'string'</span></span>,
+	<span>string <var>$style</var> = <span class="php-str">'form'</span></span>,
+	<span>bool <var>$explode</var> = <span class="php-kw">true</span></span>,
+	<span>bool <var>$required</var> = <span class="php-kw">true</span></span>,
+): array</code>
+
+
+	<div class="expandable-collapsedView">
+		Take query parameter properties and turn it into an array suitable for
+native http_build_query or GuzzleHttp\Psr7\Query…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take query parameter properties and turn it into an array suitable for
+native http_build_query or GuzzleHttp\Psr7\Query::build.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>Parameter value</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$paramName</var>&nbsp;&nbsp;</td>
+										<td><p>Parameter name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$openApiType</var>&nbsp;&nbsp;</td>
+										<td><p>OpenAPIType eg. array or object</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$style</var>&nbsp;&nbsp;</td>
+										<td><p>Parameter serialization style</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$explode</var>&nbsp;&nbsp;</td>
+										<td><p>Parameter explode option</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$required</var>&nbsp;&nbsp;</td>
+										<td><p>Whether query param is required or not</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toQueryValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="convertBoolToQueryStringFormat" id="_convertBoolToQueryStringFormat">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#232-246" title="Go to source code">convertBoolToQueryStringFormat</a>(<span>bool <var>$value</var></span>): int|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Convert boolean value to format for query string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Convert boolean value to format for query string.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>Boolean value</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Boolean value in format</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_convertBoolToQueryStringFormat">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toHeaderValue" id="_toHeaderValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#248-265" title="Go to source code">toHeaderValue</a>(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Take value and turn it into a string suitable for inclusion in
+the header. If it's a string, pass through unchanged
+If…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take value and turn it into a string suitable for inclusion in
+the header. If it's a string, pass through unchanged
+If it's a datetime object, format it in ISO8601</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>a string which will be part of the header</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the header string</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toHeaderValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toFormValue" id="_toFormValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#267-283" title="Go to source code">toFormValue</a>(<span>string|<a href="SplFileObject.html"><span title="SplFileObject">SplFileObject</span></a> <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Take value and turn it into a string suitable for inclusion in
+the http body (form parameter). If it's a string, pass…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take value and turn it into a string suitable for inclusion in
+the http body (form parameter). If it's a string, pass through unchanged
+If it's a datetime object, format it in ISO8601</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>the value of the form parameter</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the form string</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toFormValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="toString" id="_toString">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#285-304" title="Go to source code">toString</a>(<span>string|bool|<a href="DateTime.html"><span title="DateTime">DateTime</span></a> <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Take value and turn it into a string suitable for inclusion in
+the parameter. If it's a string, pass through unchanged…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Take value and turn it into a string suitable for inclusion in
+the parameter. If it's a string, pass through unchanged
+If it's a datetime object, format it in ISO8601
+If it's a boolean, convert it to &quot;true&quot; or &quot;false&quot;.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$value</var>&nbsp;&nbsp;</td>
+										<td><p>the value of the parameter</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>the header string</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_toString">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="serializeCollection" id="_serializeCollection">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#306-341" title="Go to source code">serializeCollection</a>(<span>array <var>$collection</var></span>, <span>string <var>$style</var></span>, <span>bool <var>$allowCollectionFormatMulti</var> = <span class="php-kw">false</span></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Serialize an array to a string.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Serialize an array to a string.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$collection</var>&nbsp;&nbsp;</td>
+										<td><p>collection to serialize to a string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$style</var>&nbsp;&nbsp;</td>
+										<td><p>the format use for serialization (csv,
+ssv, tsv, pipes, multi)</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$allowCollectionFormatMulti</var>&nbsp;&nbsp;</td>
+										<td><p>allow collection format to be a multidimensional array</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_serializeCollection">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="deserialize" id="_deserialize">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#343-496" title="Go to source code">deserialize</a>(<span>mixed <var>$data</var></span>, <span>string <var>$class</var></span>, <span>string[] <var>$httpHeaders</var> = <span class="php-kw">null</span></span>): object|array|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Deserialize a JSON string into an object
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Deserialize a JSON string into an object</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>object or primitive to be deserialized</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$class</var>&nbsp;&nbsp;</td>
+										<td><p>class name is passed as a string</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$httpHeaders</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP headers</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>a single or an array of $class instances</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_deserialize">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="buildQuery" id="_buildQuery">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ObjectSerializer.html#498-516" title="Go to source code">buildQuery</a>(
+	<span>array|object <var>$data</var></span>,
+	<span>string <var>$numeric_prefix</var> = <span class="php-str">''</span></span>,
+	<span>string|null <var>$arg_separator</var> = <span class="php-kw">null</span></span>,
+	<span>int <var>$encoding_type</var> = PHP_QUERY_RFC3986</span>,
+): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Native `http_build_query` wrapper.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Native <code>http_build_query</code> wrapper.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$data</var>&nbsp;&nbsp;</td>
+										<td><p>May be an array or object containing properties.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$numeric_prefix</var>&nbsp;&nbsp;</td>
+										<td><p>If numeric indices are used in the base array and this parameter is provided, it will be prepended to the numeric index for elements in the base array only.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$arg_separator</var>&nbsp;&nbsp;</td>
+										<td><p>arg_separator.output is used to separate arguments but may be overridden by specifying this parameter.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$encoding_type</var>&nbsp;&nbsp;</td>
+										<td><p>Encoding type. By default, PHP_QUERY_RFC1738.</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_buildQuery">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			Ally's PetStore API API documentation generated by <a href="https://www.apigen.org">ApiGen 1.0.0+no-version-set</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,477 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Class Ally\PetStore\ApiException | Ally's PetStore API API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ally.html">Ally</a>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-Ally.PetStore.html">PetStore</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-Ally.PetStore.Api.html">Api</a>
+			</li>
+			<li class="menuGroup-item">
+				<a href="namespace-Ally.PetStore.Schema.html">Schema</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="Ally.PetStore.Configuration.html">
+							Configuration
+						</a>
+					</li>
+					<li>
+						<a href="Ally.PetStore.HeaderSelector.html">
+							HeaderSelector
+						</a>
+					</li>
+					<li>
+						<a href="Ally.PetStore.ObjectSerializer.html">
+							ObjectSerializer
+						</a>
+					</li>
+			</ul>
+		</div>
+
+
+
+
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li class="active">
+						<a href="Ally.PetStore.ApiException.html">
+							ApiException
+						</a>
+					</li>
+			</ul>
+		</div>
+
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-Ally.PetStore.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="Ally.PetStore.ApiException.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-Ally.html">Ally</a>\<a href="namespace-Ally.PetStore.html">PetStore</a>\<a href="Ally.PetStore.ApiException.html">ApiException</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+		<tr>
+			<th><code>extends</code></th>
+			<td>
+<code><a href="Exception.html"><span title="Exception">Exception</span></a></code>			</td>
+		</tr>
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>ApiException Class Doc Comment</p>
+</div>
+		</div>
+
+			<div class="classLikeSection">
+	<ul class="classTree">
+	<li>
+<a href="Exception.html"><span>Exception</span></a>
+
+		implements
+			<a href="Throwable.html"><span title="Throwable">Throwable</span></a>
+
+	<ul class="classTree">
+	<li>
+<b><span class="active">Ally\PetStore\ApiException</span></b>
+
+
+	</li>
+	</ul>
+	</li>
+	</ul>
+			</div>
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-ApiException.html#40" title="Go to source code">ApiException.php</a><br>
+		</div>
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ApiException.html#63-76" title="Go to source code">__construct</a>(
+	<span>string <var>$message</var> = <span class="php-str">""</span></span>,
+	<span>int <var>$code</var> = <span class="php-num">0</span></span>,
+	<span>string[]|null <var>$responseHeaders</var> = []</span>,
+	<span><a href="stdClass.html"><span title="stdClass">stdClass</span></a>|string|null <var>$responseBody</var> = <span class="php-kw">null</span></span>,
+)</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructor
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructor</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$message</var>&nbsp;&nbsp;</td>
+										<td><p>Error message</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$code</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP status code</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$responseHeaders</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP response header</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$responseBody</var>&nbsp;&nbsp;</td>
+										<td><p>HTTP decoded body of the server response either as \stdClass or string</p>
+</td>
+									</tr>
+							</table>
+
+
+
+		<h4>Overrides</h4>
+		<ul>
+				<li>
+<a href="Exception.html#___construct">						<code>Exception::__construct()</code></a>				</li>
+		</ul>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponseHeaders" id="_getResponseHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ApiException.html#78-86" title="Go to source code">getResponseHeaders</a>(): string[]|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the HTTP response header
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the HTTP response header</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>HTTP response header</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponseHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponseBody" id="_getResponseBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ApiException.html#88-96" title="Go to source code">getResponseBody</a>(): <a href="stdClass.html"><span title="stdClass">stdClass</span></a>|string|null</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the HTTP body of the server response either as Json or string
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the HTTP body of the server response either as Json or string</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>HTTP body of the server response either as \stdClass or string</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponseBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setResponseObject" id="_setResponseObject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ApiException.html#98-108" title="Go to source code">setResponseObject</a>(<span>mixed <var>$obj</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets the deserialized response object (during deserialization)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets the deserialized response object (during deserialization)</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$obj</var>&nbsp;&nbsp;</td>
+										<td><p>Deserialized response object</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setResponseObject">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getResponseObject" id="_getResponseObject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-ApiException.html#110-118" title="Go to source code">getResponseObject</a>(): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Gets the deserialized response object (during deserialization)
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Gets the deserialized response object (during deserialization)</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>the deserialized response object</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getResponseObject">#</a>
+		</td>
+	</tr>
+		</table>
+		<table class="table">
+			<tr>
+				<th class="table-heading">Methods inherited from <a href="Exception.html"><span>Exception</span></a></th>
+			</tr>
+			<tr>
+				<td class="table-cell">
+<code><a href="Exception.html#___wakeup">__wakeup()</a>, <a href="Exception.html#_getMessage">getMessage()</a>, <a href="Exception.html#_getCode">getCode()</a>, <a href="Exception.html#_getFile">getFile()</a>, <a href="Exception.html#_getLine">getLine()</a>, <a href="Exception.html#_getTrace">getTrace()</a>, <a href="Exception.html#_getPrevious">getPrevious()</a>, <a href="Exception.html#_getTraceAsString">getTraceAsString()</a>, <a href="Exception.html#___toString">__toString()</a></code>				</td>
+			</tr>
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="responseBody" id="$responseBody">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="stdClass.html"><span title="stdClass">stdClass</span></a>|string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-ApiException.html#42-47" title="Go to source code">$responseBody</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$responseBody">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="responseHeaders" id="$responseHeaders">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string[]|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-ApiException.html#49-54" title="Go to source code">$responseHeaders</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$responseHeaders">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="responseObject" id="$responseObject">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"><a href="stdClass.html"><span title="stdClass">stdClass</span></a>|string|null</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-ApiException.html#56-61" title="Go to source code">$responseObject</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$responseObject">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			Ally's PetStore API API documentation generated by <a href="https://www.apigen.org">ApiGen 1.0.0+no-version-set</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>
