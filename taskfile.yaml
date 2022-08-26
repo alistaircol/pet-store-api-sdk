@@ -39,6 +39,7 @@ tasks:
 
   doxygen:
     cmds:
+    - mkdir -p .generator/docs/doxygen
     - >-
       docker run \
         --rm \
