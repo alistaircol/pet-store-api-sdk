@@ -1,0 +1,78 @@
+---
+# yaml things: https://stackoverflow.com/a/22483116/5873008
+version: 3
+tasks:
+  # i.e. code
+  default:
+    cmds:
+    - >-
+      docker run \
+        --rm \
+        --user=$(id -u):$(id -g) \
+        --volume="$(pwd):/local" \
+        --workdir=/local \
+        openapitools/openapi-generator-cli \
+        generate \
+        --template-dir=.generator/templates \
+        --config=spec/config.yaml \
+        --input-spec=spec/api.yaml \
+        --generator-name=php \
+        --output=.
+    interactive: true
+
+  docs:
+    cmds:
+    - task: doctum
+    - task: doxygen
+    - task: openapi
+    - task: phpdoc
+
+  doctum:
+    cmds:
+    - mkdir -p .generator/bin
+    - curl -o .generator/bin/doctum.phar https://doctum.long-term.support/releases/latest/doctum.phar
+    - chmod +x .generator/bin/doctum.phar
+    - php .generator/bin/doctum.phar parse --force --ignore-parse-errors doctum.php
+    - php .generator/bin/doctum.phar render --force --ignore-parse-errors doctum.php
+    interactive: true
+
+  doxygen:
+    cmds:
+    - >-
+      docker run \
+        --rm \
+        --user=$(id -u):$(id -g) \
+        --volume="$(pwd):/local" \
+        --workdir=/local \
+        greenbone/doxygen \
+        doxygen Doxyfile
+    interactive: true
+
+  openapi:
+    cmds:
+    - >-
+      docker run \
+        --rm \
+        --user=$(id -u):$(id -g) \
+        --volume="$(pwd):/local" \
+        --workdir=/local \
+        openapitools/openapi-generator-cli \
+        generate \
+        --template-dir=.generator/templates \
+        --config=spec/config.yaml \
+        --input-spec=spec/api.yaml \
+        --generator-name=html2 \
+        --output=.generator/docs/openapi
+    interactive: true
+
+  phpdoc:
+    cmds:
+    - >-
+      docker run \
+        --rm \
+        --user=$(id -u):$(id -g) \
+        --volume="$(pwd):/local" \
+        --workdir=/local \
+        phpdoc/phpdoc:3 \
+        --config=phpdoc.xml run
+    interactive: true
