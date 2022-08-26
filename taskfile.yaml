@@ -27,6 +27,16 @@ tasks:
     - task: openapi
     - task: phpdoc
 
+  apigen:
+    cmds:
+    - >-
+      docker run \
+        --rm \
+        --user=$(id -u):$(id -g) \
+        --volume="$(pwd):/local" \
+        --workdir=/local \
+        apigen/apigen
+
   doctum:
     cmds:
     - mkdir -p .generator/bin
