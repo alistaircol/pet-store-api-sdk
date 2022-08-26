@@ -27,7 +27,7 @@ jobs:
         ${{ matrix.affix }} == 'doctum'
     - name: Create `${{ matrix.affix }}` documentation
       id: documentation_context
-      run: task ${{ matrix.affix }}
+      run: task --taskfile=taskfile.yaml ${{ matrix.affix }}
     - name: Release `${{ matrix.affix }}` documentation
       uses: JamesIves/github-pages-deploy-action@v4
       with:
