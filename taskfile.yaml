@@ -22,6 +22,7 @@ tasks:
 
   docs:
     cmds:
+    - task: apigen
     - task: doctum
     - task: doxygen
     - task: openapi
@@ -36,6 +37,8 @@ tasks:
         --volume="$(pwd):/local" \
         --workdir=/local \
         apigen/apigen
+    - echo "::set-output name=directory::.generator/docs/apigen"
+    interactive: true
 
   doctum:
     cmds:
