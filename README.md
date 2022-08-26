@@ -52,16 +52,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: petstore_auth
-$config = Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Ally\Project\Api\PetApi(
+$apiInstance = new Ally\PetStore\Api\PetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$pet = new \Ally\Project\Schema\Pet(); // \Ally\Project\Schema\Pet | Pet object that needs to be added to the store
+$pet = new \Ally\PetStore\Schema\Pet(); // \Ally\PetStore\Schema\Pet | Pet object that needs to be added to the store
 
 try {
     $result = $apiInstance->addPet($pet);

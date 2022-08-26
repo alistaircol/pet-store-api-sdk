@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Api;
+namespace Ally\PetStore\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Ally\Project\ApiException;
-use Ally\Project\Configuration;
-use Ally\Project\HeaderSelector;
-use Ally\Project\ObjectSerializer;
+use Ally\PetStore\ApiException;
+use Ally\PetStore\Configuration;
+use Ally\PetStore\HeaderSelector;
+use Ally\PetStore\ObjectSerializer;
 
 /**
  * StoreApi Class Doc Comment
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,7 +122,7 @@ class StoreApi
      *
      * @param  string $order_id ID of the order that needs to be deleted (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -138,7 +138,7 @@ class StoreApi
      *
      * @param  string $order_id ID of the order that needs to be deleted (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -349,7 +349,7 @@ class StoreApi
      * Returns pet inventories by status
      *
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array<string,int>
      */
@@ -365,7 +365,7 @@ class StoreApi
      * Returns pet inventories by status
      *
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of array<string,int>, HTTP status code, HTTP response headers (array of strings)
      */
@@ -617,9 +617,9 @@ class StoreApi
      *
      * @param  int $order_id ID of pet that needs to be fetched (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Order
+     * @return \Ally\PetStore\Schema\Order
      */
     public function getOrderById($order_id)
     {
@@ -634,9 +634,9 @@ class StoreApi
      *
      * @param  int $order_id ID of pet that needs to be fetched (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderByIdWithHttpInfo($order_id)
     {
@@ -679,23 +679,23 @@ class StoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Order' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Order' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Order' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Order' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Order', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Order', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Order';
+            $returnType = '\Ally\PetStore\Schema\Order';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -716,7 +716,7 @@ class StoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Order',
+                        '\Ally\PetStore\Schema\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -758,7 +758,7 @@ class StoreApi
      */
     public function getOrderByIdAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Ally\Project\Schema\Order';
+        $returnType = '\Ally\PetStore\Schema\Order';
         $request = $this->getOrderByIdRequest($order_id);
 
         return $this->client
@@ -904,11 +904,11 @@ class StoreApi
      *
      * Place an order for a pet
      *
-     * @param  \Ally\Project\Schema\Order $order order placed for purchasing the pet (required)
+     * @param  \Ally\PetStore\Schema\Order $order order placed for purchasing the pet (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Order
+     * @return \Ally\PetStore\Schema\Order
      */
     public function placeOrder($order)
     {
@@ -921,11 +921,11 @@ class StoreApi
      *
      * Place an order for a pet
      *
-     * @param  \Ally\Project\Schema\Order $order order placed for purchasing the pet (required)
+     * @param  \Ally\PetStore\Schema\Order $order order placed for purchasing the pet (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function placeOrderWithHttpInfo($order)
     {
@@ -968,23 +968,23 @@ class StoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Order' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Order' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Order' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Order' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Order', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Order', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Order';
+            $returnType = '\Ally\PetStore\Schema\Order';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1005,7 +1005,7 @@ class StoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Order',
+                        '\Ally\PetStore\Schema\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1020,7 +1020,7 @@ class StoreApi
      *
      * Place an order for a pet
      *
-     * @param  \Ally\Project\Schema\Order $order order placed for purchasing the pet (required)
+     * @param  \Ally\PetStore\Schema\Order $order order placed for purchasing the pet (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1040,14 +1040,14 @@ class StoreApi
      *
      * Place an order for a pet
      *
-     * @param  \Ally\Project\Schema\Order $order order placed for purchasing the pet (required)
+     * @param  \Ally\PetStore\Schema\Order $order order placed for purchasing the pet (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function placeOrderAsyncWithHttpInfo($order)
     {
-        $returnType = '\Ally\Project\Schema\Order';
+        $returnType = '\Ally\PetStore\Schema\Order';
         $request = $this->placeOrderRequest($order);
 
         return $this->client
@@ -1089,7 +1089,7 @@ class StoreApi
     /**
      * Create request for operation 'placeOrder'
      *
-     * @param  \Ally\Project\Schema\Order $order order placed for purchasing the pet (required)
+     * @param  \Ally\PetStore\Schema\Order $order order placed for purchasing the pet (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

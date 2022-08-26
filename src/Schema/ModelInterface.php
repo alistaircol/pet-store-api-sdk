@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project\Schema
+ * @package  Ally\PetStore\Schema
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Schema;
+namespace Ally\PetStore\Schema;
 
 /**
  * Interface abstracting model access.
  *
- * @package Ally\Project\Schema
+ * @package Ally\PetStore\Schema
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

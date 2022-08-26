@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Schema;
+namespace Ally\PetStore\Schema;
 
 use \ArrayAccess;
-use \Ally\Project\ObjectSerializer;
+use \Ally\PetStore\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
  * @description An order for a pets from the pet store
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

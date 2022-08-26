@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Api;
+namespace Ally\PetStore\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Ally\Project\ApiException;
-use Ally\Project\Configuration;
-use Ally\Project\HeaderSelector;
-use Ally\Project\ObjectSerializer;
+use Ally\PetStore\ApiException;
+use Ally\PetStore\Configuration;
+use Ally\PetStore\HeaderSelector;
+use Ally\PetStore\ObjectSerializer;
 
 /**
  * PetApi Class Doc Comment
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -120,11 +120,11 @@ class PetApi
      *
      * Add a new pet to the store
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Pet
+     * @return \Ally\PetStore\Schema\Pet
      */
     public function addPet($pet)
     {
@@ -137,11 +137,11 @@ class PetApi
      *
      * Add a new pet to the store
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
      */
     public function addPetWithHttpInfo($pet)
     {
@@ -184,23 +184,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Pet' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Pet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Pet' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Pet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Pet', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Pet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Pet';
+            $returnType = '\Ally\PetStore\Schema\Pet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -221,7 +221,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Pet',
+                        '\Ally\PetStore\Schema\Pet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class PetApi
      *
      * Add a new pet to the store
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -256,14 +256,14 @@ class PetApi
      *
      * Add a new pet to the store
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function addPetAsyncWithHttpInfo($pet)
     {
-        $returnType = '\Ally\Project\Schema\Pet';
+        $returnType = '\Ally\PetStore\Schema\Pet';
         $request = $this->addPetRequest($pet);
 
         return $this->client
@@ -305,7 +305,7 @@ class PetApi
     /**
      * Create request for operation 'addPet'
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -407,7 +407,7 @@ class PetApi
      * @param  int $pet_id Pet id to delete (required)
      * @param  string $api_key api_key (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -424,7 +424,7 @@ class PetApi
      * @param  int $pet_id Pet id to delete (required)
      * @param  string $api_key (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -648,9 +648,9 @@ class PetApi
      *
      * @param  string[] $status Status values that need to be considered for filter (required) (deprecated)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Pet[]
+     * @return \Ally\PetStore\Schema\Pet[]
      */
     public function findPetsByStatus($status)
     {
@@ -665,9 +665,9 @@ class PetApi
      *
      * @param  string[] $status Status values that need to be considered for filter (required) (deprecated)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Pet[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Pet[], HTTP status code, HTTP response headers (array of strings)
      */
     public function findPetsByStatusWithHttpInfo($status)
     {
@@ -710,23 +710,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Pet[]' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Pet[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Pet[]' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Pet[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Pet[]', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Pet[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Pet[]';
+            $returnType = '\Ally\PetStore\Schema\Pet[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -747,7 +747,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Pet[]',
+                        '\Ally\PetStore\Schema\Pet[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -789,7 +789,7 @@ class PetApi
      */
     public function findPetsByStatusAsyncWithHttpInfo($status)
     {
-        $returnType = '\Ally\Project\Schema\Pet[]';
+        $returnType = '\Ally\PetStore\Schema\Pet[]';
         $request = $this->findPetsByStatusRequest($status);
 
         return $this->client
@@ -935,9 +935,9 @@ class PetApi
      *
      * @param  string[] $tags Tags to filter by (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Pet[]
+     * @return \Ally\PetStore\Schema\Pet[]
      * @deprecated
      */
     public function findPetsByTags($tags)
@@ -953,9 +953,9 @@ class PetApi
      *
      * @param  string[] $tags Tags to filter by (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Pet[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Pet[], HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function findPetsByTagsWithHttpInfo($tags)
@@ -999,23 +999,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Pet[]' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Pet[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Pet[]' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Pet[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Pet[]', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Pet[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Pet[]';
+            $returnType = '\Ally\PetStore\Schema\Pet[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1036,7 +1036,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Pet[]',
+                        '\Ally\PetStore\Schema\Pet[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1080,7 +1080,7 @@ class PetApi
      */
     public function findPetsByTagsAsyncWithHttpInfo($tags)
     {
-        $returnType = '\Ally\Project\Schema\Pet[]';
+        $returnType = '\Ally\PetStore\Schema\Pet[]';
         $request = $this->findPetsByTagsRequest($tags);
 
         return $this->client
@@ -1227,9 +1227,9 @@ class PetApi
      *
      * @param  int $pet_id ID of pet to return (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Pet
+     * @return \Ally\PetStore\Schema\Pet
      */
     public function getPetById($pet_id)
     {
@@ -1244,9 +1244,9 @@ class PetApi
      *
      * @param  int $pet_id ID of pet to return (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPetByIdWithHttpInfo($pet_id)
     {
@@ -1289,23 +1289,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Pet' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Pet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Pet' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Pet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Pet', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Pet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Pet';
+            $returnType = '\Ally\PetStore\Schema\Pet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1326,7 +1326,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Pet',
+                        '\Ally\PetStore\Schema\Pet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1368,7 +1368,7 @@ class PetApi
      */
     public function getPetByIdAsyncWithHttpInfo($pet_id)
     {
-        $returnType = '\Ally\Project\Schema\Pet';
+        $returnType = '\Ally\PetStore\Schema\Pet';
         $request = $this->getPetByIdRequest($pet_id);
 
         return $this->client
@@ -1512,11 +1512,11 @@ class PetApi
      *
      * Update an existing pet
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\Pet
+     * @return \Ally\PetStore\Schema\Pet
      */
     public function updatePet($pet)
     {
@@ -1529,11 +1529,11 @@ class PetApi
      *
      * Update an existing pet
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\Pet, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePetWithHttpInfo($pet)
     {
@@ -1576,23 +1576,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\Pet' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\Pet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\Pet' !== 'string') {
+                        if ('\Ally\PetStore\Schema\Pet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\Pet', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\Pet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\Pet';
+            $returnType = '\Ally\PetStore\Schema\Pet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1613,7 +1613,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\Pet',
+                        '\Ally\PetStore\Schema\Pet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1628,7 +1628,7 @@ class PetApi
      *
      * Update an existing pet
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1648,14 +1648,14 @@ class PetApi
      *
      * Update an existing pet
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updatePetAsyncWithHttpInfo($pet)
     {
-        $returnType = '\Ally\Project\Schema\Pet';
+        $returnType = '\Ally\PetStore\Schema\Pet';
         $request = $this->updatePetRequest($pet);
 
         return $this->client
@@ -1697,7 +1697,7 @@ class PetApi
     /**
      * Create request for operation 'updatePet'
      *
-     * @param  \Ally\Project\Schema\Pet $pet Pet object that needs to be added to the store (required)
+     * @param  \Ally\PetStore\Schema\Pet $pet Pet object that needs to be added to the store (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1800,7 +1800,7 @@ class PetApi
      * @param  string $name Updated name of the pet (optional)
      * @param  string $status Updated status of the pet (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1818,7 +1818,7 @@ class PetApi
      * @param  string $name Updated name of the pet (optional)
      * @param  string $status Updated status of the pet (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2052,9 +2052,9 @@ class PetApi
      * @param  string $additional_metadata Additional data to pass to server (optional)
      * @param  \SplFileObject $file file to upload (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\ApiResponse
+     * @return \Ally\PetStore\Schema\ApiResponse
      */
     public function uploadFile($pet_id, $additional_metadata = null, $file = null)
     {
@@ -2071,9 +2071,9 @@ class PetApi
      * @param  string $additional_metadata Additional data to pass to server (optional)
      * @param  \SplFileObject $file file to upload (optional)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function uploadFileWithHttpInfo($pet_id, $additional_metadata = null, $file = null)
     {
@@ -2116,23 +2116,23 @@ class PetApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\ApiResponse' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\ApiResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\ApiResponse' !== 'string') {
+                        if ('\Ally\PetStore\Schema\ApiResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\ApiResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\ApiResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\ApiResponse';
+            $returnType = '\Ally\PetStore\Schema\ApiResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2153,7 +2153,7 @@ class PetApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\ApiResponse',
+                        '\Ally\PetStore\Schema\ApiResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2199,7 +2199,7 @@ class PetApi
      */
     public function uploadFileAsyncWithHttpInfo($pet_id, $additional_metadata = null, $file = null)
     {
-        $returnType = '\Ally\Project\Schema\ApiResponse';
+        $returnType = '\Ally\PetStore\Schema\ApiResponse';
         $request = $this->uploadFileRequest($pet_id, $additional_metadata, $file);
 
         return $this->client

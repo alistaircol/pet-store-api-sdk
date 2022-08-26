@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Api;
+namespace Ally\PetStore\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Ally\Project\ApiException;
-use Ally\Project\Configuration;
-use Ally\Project\HeaderSelector;
-use Ally\Project\ObjectSerializer;
+use Ally\PetStore\ApiException;
+use Ally\PetStore\Configuration;
+use Ally\PetStore\HeaderSelector;
+use Ally\PetStore\ObjectSerializer;
 
 /**
  * UserApi Class Doc Comment
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -120,9 +120,9 @@ class UserApi
      *
      * Create user
      *
-     * @param  \Ally\Project\Schema\User $user Created user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Created user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -136,9 +136,9 @@ class UserApi
      *
      * Create user
      *
-     * @param  \Ally\Project\Schema\User $user Created user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Created user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -195,7 +195,7 @@ class UserApi
      *
      * Create user
      *
-     * @param  \Ally\Project\Schema\User $user Created user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Created user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -215,7 +215,7 @@ class UserApi
      *
      * Create user
      *
-     * @param  \Ally\Project\Schema\User $user Created user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Created user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -251,7 +251,7 @@ class UserApi
     /**
      * Create request for operation 'createUser'
      *
-     * @param  \Ally\Project\Schema\User $user Created user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Created user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -351,9 +351,9 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -367,9 +367,9 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -426,7 +426,7 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -446,7 +446,7 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -482,7 +482,7 @@ class UserApi
     /**
      * Create request for operation 'createUsersWithArrayInput'
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -582,9 +582,9 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -598,9 +598,9 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -657,7 +657,7 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -677,7 +677,7 @@ class UserApi
      *
      * Creates list of users with given input array
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -713,7 +713,7 @@ class UserApi
     /**
      * Create request for operation 'createUsersWithListInput'
      *
-     * @param  \Ally\Project\Schema\User[] $user List of user object (required)
+     * @param  \Ally\PetStore\Schema\User[] $user List of user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -815,7 +815,7 @@ class UserApi
      *
      * @param  string $username The name that needs to be deleted (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -831,7 +831,7 @@ class UserApi
      *
      * @param  string $username The name that needs to be deleted (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1048,9 +1048,9 @@ class UserApi
      *
      * @param  string $username The name that needs to be fetched. Use user1 for testing. (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ally\Project\Schema\User
+     * @return \Ally\PetStore\Schema\User
      */
     public function getUserByName($username)
     {
@@ -1065,9 +1065,9 @@ class UserApi
      *
      * @param  string $username The name that needs to be fetched. Use user1 for testing. (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ally\Project\Schema\User, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ally\PetStore\Schema\User, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserByNameWithHttpInfo($username)
     {
@@ -1110,23 +1110,23 @@ class UserApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ally\Project\Schema\User' === '\SplFileObject') {
+                    if ('\Ally\PetStore\Schema\User' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Ally\Project\Schema\User' !== 'string') {
+                        if ('\Ally\PetStore\Schema\User' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ally\Project\Schema\User', []),
+                        ObjectSerializer::deserialize($content, '\Ally\PetStore\Schema\User', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ally\Project\Schema\User';
+            $returnType = '\Ally\PetStore\Schema\User';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1147,7 +1147,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ally\Project\Schema\User',
+                        '\Ally\PetStore\Schema\User',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1189,7 +1189,7 @@ class UserApi
      */
     public function getUserByNameAsyncWithHttpInfo($username)
     {
-        $returnType = '\Ally\Project\Schema\User';
+        $returnType = '\Ally\PetStore\Schema\User';
         $request = $this->getUserByNameRequest($username);
 
         return $this->client
@@ -1331,7 +1331,7 @@ class UserApi
      * @param  string $username The user name for login (required)
      * @param  string $password The password for login in clear text (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1349,7 +1349,7 @@ class UserApi
      * @param  string $username The user name for login (required)
      * @param  string $password The password for login in clear text (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1637,7 +1637,7 @@ class UserApi
      * Logs out current logged in user session
      *
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1652,7 +1652,7 @@ class UserApi
      * Logs out current logged in user session
      *
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1850,9 +1850,9 @@ class UserApi
      * Updated user
      *
      * @param  string $username name that need to be deleted (required)
-     * @param  \Ally\Project\Schema\User $user Updated user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Updated user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1867,9 +1867,9 @@ class UserApi
      * Updated user
      *
      * @param  string $username name that need to be deleted (required)
-     * @param  \Ally\Project\Schema\User $user Updated user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Updated user object (required)
      *
-     * @throws \Ally\Project\ApiException on non-2xx response
+     * @throws \Ally\PetStore\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1927,7 +1927,7 @@ class UserApi
      * Updated user
      *
      * @param  string $username name that need to be deleted (required)
-     * @param  \Ally\Project\Schema\User $user Updated user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Updated user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1948,7 +1948,7 @@ class UserApi
      * Updated user
      *
      * @param  string $username name that need to be deleted (required)
-     * @param  \Ally\Project\Schema\User $user Updated user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Updated user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1985,7 +1985,7 @@ class UserApi
      * Create request for operation 'updateUser'
      *
      * @param  string $username name that need to be deleted (required)
-     * @param  \Ally\Project\Schema\User $user Updated user object (required)
+     * @param  \Ally\PetStore\Schema\User $user Updated user object (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

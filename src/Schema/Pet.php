@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace Ally\Project\Schema;
+namespace Ally\PetStore\Schema;
 
 use \ArrayAccess;
-use \Ally\Project\ObjectSerializer;
+use \Ally\PetStore\ObjectSerializer;
 
 /**
  * Pet Class Doc Comment
  *
  * @category Class
  * @description A pet for sale in the pet store
- * @package  Ally\Project
+ * @package  Ally\PetStore
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'int',
-        'category' => '\Ally\Project\Schema\Category',
+        'category' => '\Ally\PetStore\Schema\Category',
         'name' => 'string',
         'photo_urls' => 'string[]',
-        'tags' => '\Ally\Project\Schema\Tag[]',
+        'tags' => '\Ally\PetStore\Schema\Tag[]',
         'status' => 'string'
     ];
 
@@ -379,7 +379,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \Ally\Project\Schema\Category|null
+     * @return \Ally\PetStore\Schema\Category|null
      */
     public function getCategory()
     {
@@ -389,7 +389,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \Ally\Project\Schema\Category|null $category category
+     * @param \Ally\PetStore\Schema\Category|null $category category
      *
      * @return self
      */
@@ -466,7 +466,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tags
      *
-     * @return \Ally\Project\Schema\Tag[]|null
+     * @return \Ally\PetStore\Schema\Tag[]|null
      */
     public function getTags()
     {
@@ -476,7 +476,7 @@ class Pet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param \Ally\Project\Schema\Tag[]|null $tags tags
+     * @param \Ally\PetStore\Schema\Tag[]|null $tags tags
      *
      * @return self
      */

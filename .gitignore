@@ -17,3 +17,6 @@ composer.phar
 # Files Ally wants to ignore
 .idea/
 .openapi-generator
+.generator/bin
+.generator/cache
+.generator/docs

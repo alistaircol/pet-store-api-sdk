@@ -31,9 +31,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "Ally\\Project\\" : "src//" }
+        "psr-4": { "Ally\\PetStore\\" : "src//" }
     },
     "autoload-dev": {
-        "psr-4": { "Ally\\Project\\Test\\" : "test/" }
+        "psr-4": { "Ally\\PetStore\\Test\\" : "test/" }
     }
 }
