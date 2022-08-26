@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['jsonserialize',['jsonSerialize',['../d0/ddd/class_ally_1_1_pet_store_1_1_schema_1_1_api_response.html#a912493264cfb0311ce17ab27d2ff9a4a',1,'Ally\PetStore\Schema\ApiResponse\jsonSerialize()'],['../db/de7/class_ally_1_1_pet_store_1_1_schema_1_1_category.html#a71e7196e3b07ed1f095da44898d3de3f',1,'Ally\PetStore\Schema\Category\jsonSerialize()'],['../dc/dfb/class_ally_1_1_pet_store_1_1_schema_1_1_order.html#a8838cb46f8b5416fe3960f4c1a3b5715',1,'Ally\PetStore\Schema\Order\jsonSerialize()'],['../d7/dc3/class_ally_1_1_pet_store_1_1_schema_1_1_pet.html#a7089d9083aae41a091c4a29e5576cf02',1,'Ally\PetStore\Schema\Pet\jsonSerialize()'],['../d7/dec/class_ally_1_1_pet_store_1_1_schema_1_1_tag.html#a2a21f0fa78fd834b6492cd112ce1b98f',1,'Ally\PetStore\Schema\Tag\jsonSerialize()'],['../dd/d7d/class_ally_1_1_pet_store_1_1_schema_1_1_user.html#ab79e4dda76f73dfeed3b9a00d9a887b3',1,'Ally\PetStore\Schema\User\jsonSerialize()']]]
+];

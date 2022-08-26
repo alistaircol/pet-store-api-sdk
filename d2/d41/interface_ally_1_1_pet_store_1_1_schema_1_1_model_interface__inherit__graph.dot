@@ -1,0 +1,20 @@
+digraph "Ally\PetStore\Schema\ModelInterface"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Ally\\PetStore\\Schema\l\\ModelInterface",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Ally\\PetStore\\Schema\l\\ApiResponse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/ddd/class_ally_1_1_pet_store_1_1_schema_1_1_api_response.html"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Ally\\PetStore\\Schema\l\\Category",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/de7/class_ally_1_1_pet_store_1_1_schema_1_1_category.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Ally\\PetStore\\Schema\l\\Order",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dfb/class_ally_1_1_pet_store_1_1_schema_1_1_order.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Ally\\PetStore\\Schema\\Pet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dc3/class_ally_1_1_pet_store_1_1_schema_1_1_pet.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Ally\\PetStore\\Schema\\Tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dec/class_ally_1_1_pet_store_1_1_schema_1_1_tag.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Ally\\PetStore\\Schema\\User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d7d/class_ally_1_1_pet_store_1_1_schema_1_1_user.html"];
+}
