@@ -10,10 +10,10 @@ invokerPackage: Ally\PetStore
 # model/dto package
 modelPackage: Schema
 # path to folder, probably will just be same as gitRepoId for consistency
-packageName: project-sdk
+packageName: pet-store-api-sdk
 srcBasePath: src/
 gitUserId: alistaircol
-gitRepoId: project-sdk
+gitRepoId: pet-store-api-sdk
 
 # for the html2 docs
-phpInvokerPackage: Ally\Project
+phpInvokerPackage: Ally\PetStore
