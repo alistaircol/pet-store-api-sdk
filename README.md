@@ -1,4 +1,4 @@
-# project-sdk
+# pet-store-api-sdk
 
 > :raised_hand: I have changed the template so this part of the README will always be here!
 
@@ -21,11 +21,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/alistaircol/project-sdk.git"
+      "url": "https://github.com/alistaircol/pet-store-api-sdk.git"
     }
   ],
   "require": {
-    "alistaircol/project-sdk": "*@dev"
+    "alistaircol/pet-store-api-sdk": "*@dev"
   }
 }
 ```
@@ -38,7 +38,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/project-sdk/vendor/autoload.php');
+require_once('/path/to/pet-store-api-sdk/vendor/autoload.php');
 ```
 
 ## Getting Started
