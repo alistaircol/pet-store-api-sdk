@@ -1297,9 +1297,9 @@ api.addPet(pet, callback);
                             <div class="tab-pane" id="examples-Pet-addPet-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -1332,7 +1332,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -1535,6 +1535,7 @@ $(document).ready(function() {
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -1728,9 +1729,9 @@ api.deletePet(petId, opts, callback);
                             <div class="tab-pane" id="examples-Pet-deletePet-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -1763,7 +1764,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -2089,9 +2090,9 @@ api.findPetsByStatus(status, callback);
                             <div class="tab-pane" id="examples-Pet-findPetsByStatus-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -2124,7 +2125,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -2306,6 +2307,7 @@ Status values that need to be considered for filter
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -2498,9 +2500,9 @@ api.findPetsByTags(tags, callback);
                             <div class="tab-pane" id="examples-Pet-findPetsByTags-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -2533,7 +2535,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -2715,6 +2717,7 @@ Tags to filter by
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -2913,9 +2916,9 @@ api.getPetById(petId, callback);
                             <div class="tab-pane" id="examples-Pet-getPetById-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -2950,9 +2953,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -3130,6 +3133,7 @@ ID of pet to return
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -3372,9 +3376,9 @@ api.updatePet(pet, callback);
                             <div class="tab-pane" id="examples-Pet-updatePet-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -3407,7 +3411,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -3610,6 +3614,7 @@ $(document).ready(function() {
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -3853,9 +3858,9 @@ api.updatePetWithForm(petId, opts, callback);
                             <div class="tab-pane" id="examples-Pet-updatePetWithForm-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -3889,7 +3894,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -4255,9 +4260,9 @@ api.uploadFile(petId, opts, callback);
                             <div class="tab-pane" id="examples-Pet-uploadFile-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -4292,7 +4297,7 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: petstore_auth
-Ally\Project\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\PetApi();
@@ -4529,6 +4534,7 @@ file to upload
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -4681,9 +4687,9 @@ api.deleteOrder(orderId, callback);
                             <div class="tab-pane" id="examples-Store-deleteOrder-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -5012,9 +5018,9 @@ api.getInventory(callback);
                             <div class="tab-pane" id="examples-Store-getInventory-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -5048,9 +5054,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\StoreApi();
@@ -5190,6 +5196,7 @@ pub fn main() {
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -5345,9 +5352,9 @@ api.getOrderById(orderId, callback);
                             <div class="tab-pane" id="examples-Store-getOrderById-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -5543,6 +5550,7 @@ ID of pet that needs to be fetched
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -5751,9 +5759,9 @@ api.placeOrder(order, callback);
                             <div class="tab-pane" id="examples-Store-placeOrder-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -5963,6 +5971,7 @@ $(document).ready(function() {
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -6169,9 +6178,9 @@ api.createUser(user, callback);
                             <div class="tab-pane" id="examples-User-createUser-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -6205,9 +6214,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
@@ -6524,9 +6533,9 @@ api.createUsersWithArrayInput(user, callback);
                             <div class="tab-pane" id="examples-User-createUsersWithArrayInput-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -6560,9 +6569,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
@@ -6882,9 +6891,9 @@ api.createUsersWithListInput(user, callback);
                             <div class="tab-pane" id="examples-User-createUsersWithListInput-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -6918,9 +6927,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
@@ -7229,9 +7238,9 @@ api.deleteUser(username, callback);
                             <div class="tab-pane" id="examples-User-deleteUser-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -7265,9 +7274,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
@@ -7563,9 +7572,9 @@ api.getUserByName(username, callback);
                             <div class="tab-pane" id="examples-User-getUserByName-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -7758,6 +7767,7 @@ The name that needs to be fetched. Use user1 for testing.
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -7962,9 +7972,9 @@ api.loginUser(username, password, callback);
                             <div class="tab-pane" id="examples-User-loginUser-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -8217,6 +8227,7 @@ The password for login in clear text
                                             if (schema.properties[item].$ref != null) {
                                               schema.properties[item] = defsParser.$refs.get(schema.properties[item].$ref);
                                             }
+                                          });
                                         } else if (schema.items != null && schema.items.$ref != null) {
                                             schema.items = defsParser.$refs.get(schema.items.$ref);
                                         } else {
@@ -8432,9 +8443,9 @@ api.logoutUser(callback);
                             <div class="tab-pane" id="examples-User-logoutUser-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -8467,9 +8478,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
@@ -8740,9 +8751,9 @@ api.updateUser(username, user, callback);
                             <div class="tab-pane" id="examples-User-updateUser-0-csharp">
                               <pre class="prettyprint"><code class="language-cs">using System;
 using System.Diagnostics;
-using project-sdk.Api;
-using project-sdk.Client;
-using project-sdk.Model;
+using pet-store-api-sdk.Api;
+using pet-store-api-sdk.Client;
+using pet-store-api-sdk.Model;
 
 namespace Example
 {
@@ -8777,9 +8788,9 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Ally\Project\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Ally\Project\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Ally\PetStore\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\UserApi();
