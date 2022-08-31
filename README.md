@@ -1,6 +1,10 @@
-# pet-store-api-sdk
-
 > :raised_hand: I have changed the template so this part of the README will always be here!
+
+## Read [here](https://ac93.uk/articles/github-action-build-multiple-sets-of-documentation/) for more context
+
+---
+
+# pet-store-api-sdk
 
 This is a sample server Petstore server. For this sample, you can use the api key `special-key` to test the authorization filters.
 
